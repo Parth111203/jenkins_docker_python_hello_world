@@ -1,7 +1,8 @@
-FROM	 python:3.9-slim-buster
 
-WORKDIR		/app
+FROM python:3.9-slim-buster
 
-COPY	hello.py   /app
+WORKDIR /app
 
-CMD	["python3", "hello.py"]
+COPY hello.py /app/
+
+CMD ["python3", "hello.py"]
